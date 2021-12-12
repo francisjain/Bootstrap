@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+    crossorigin="anonymous"></script>
+    <style> 
+        input[type=text] {
+          width: 100%;
+          margin: 8px 0;
+          padding-left: 0%;
+          box-sizing: border-box;
+          border-radius: 0%;
+          border: none;
+          border-bottom: 1px solid rgb(223, 220, 220)
+        }
+
+        select{
+          width: 100%;
+          margin: 8px 0;
+          padding: 10px;
+          padding-left: 0%;
+          border-radius: 0%;
+          border: none;
+          border-bottom: 1px solid rgb(223, 220, 220)
+        }
+        
+        textarea{
+          width: 100%;
+          margin: 8px 0;
+          box-sizing: border-box;
+          border-radius: 0%;
+          border: none;
+          border-bottom: 1px solid rgb(223, 220, 220)
+        }
+        
+        @media screen and (min-width: 676px) {
+        .modal-dialog {
+          max-width: 600px; /* New width for default modal */
+        }
+    }
+        </style>
+</head>
+<body>
+    
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary m-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog-centered modal-dialog  ">
+          <div class="modal-content" >
+            <div class="container p-5 ">
+                <div class="container text-end"><button type="button" class="btn-close" style="font-size: 12px;" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body">
+                    <h4 class="modal-title ms-1" id="exampleModalLabel">Get Training Quote for free</h4>
+                    <form>
+                        
+                        <input type="text" name="name" placeholder="Name" required="" class="form-control">
+                        <input type="text" id="fname" name="fname" placeholder="Email" class="form-control">
+                        <input type="text" name="phone" placeholder="Phone Number" required="" class="form-control">
+
+                        <select name="current_status" required="" >
+                        
+                            <option selected="true" >Select Course interested in</option><br>
+                                                      <option>Data Science - ML - AI - Big Data with Cloud &amp; Tableau</option>
+                                                  <option>Python Django - Angular- Full Stack Web Development Expert</option>
+                                                  <option>Software Testing Specialist</option>
+                                                  <option>MEARN Stack Web Development Expert - Angular &amp; React</option>
+                                                  <option>Business Analytics - Power BI &amp; Tableau</option>
+                                                  <option>Android Developer Expert Training In Kochi- Flutter</option>
+                                                  <option>DATA SCIENCE - ML - AI - &amp; TABLEAU</option>
+                                              </select>
+
+                        <input type="text" name="city" placeholder="City" class="form-control"> 
+                        <textarea name="message" placeholder="Comments" rows="5" ></textarea>
+                        
+                      </form>
+                </div>
+                <div class="footer ms-3">
+                    <button class="text-white p-1 ps-5 pe-5 "
+                                style="background-color: #5e068a; border:1px solid #5e068a; font-weight: 500;">SUBMIT</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+
+
+</body>
+</html>
